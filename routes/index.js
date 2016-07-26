@@ -8,7 +8,7 @@ app.use(cors(corsOptions));
 /*
 
 */
- 
+  app.use('/api/auth', require('./auth')(app));
   app.use('/api/users', require('./users')(app));
  
 };

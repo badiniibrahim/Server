@@ -7,5 +7,9 @@ module.exports = function(app){
         app.actions.users.create
     );
 
+    router.get('/',
+        app.actions.users.search
+    );
+
     return router;
 };

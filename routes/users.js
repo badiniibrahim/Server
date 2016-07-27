@@ -8,8 +8,10 @@ module.exports = function(app){
     );
 
     router.get('/',
-        app.actions.users.search
+        app.actions.users.list
     );
+
+    
 
     return router;
 };
